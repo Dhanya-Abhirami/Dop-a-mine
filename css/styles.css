@@ -1,7 +1,5 @@
-/* Import Open Sans from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-/* Make all elements use Open Sans by default */
 body, * { font-family: 'Open Sans', sans-serif; }
 :root {
 	--primary: #6C63FF;
@@ -39,7 +37,7 @@ input
 }
 select, input {
 	background: var(--white);
-	border: solid 1px #b1afaf;
+	border: solid 1px var(--secondary);
 	border-radius: 3px;
 	font-size: 1rem;
 }
@@ -61,12 +59,11 @@ button {
 	border-radius: 5px;
 	font-weight: 600;
 	text-align: center;
-	box-shadow: 0px 3px 4px #0000002e;
+	box-shadow: 0px 3px 4px var(--tertiary);
 	letter-spacing: 0.2px;
 	transition: background 0.2s;
 }
 
-/* Space out a button following a button */
 button + button {
 	margin-left: 5px;
 }
@@ -79,8 +76,8 @@ input[type="radio"] { margin-right: 10px; }
 	width: 100%;
 	height: 60px;
 	min-width: 860px;
-	background: #fbfbfb;
-	box-shadow: 0px 2px 5px #bfbfbf;
+	background: var(--tertiary);
+	box-shadow: 0px 2px 5px var(--tertiary);
 }
 
 #main
@@ -93,17 +90,6 @@ input[type="radio"] { margin-right: 10px; }
 {
 	width: 50px;
 }
-#siteTitler
-{
-	font-size: 26px;
-	color: red;
-	position: relative;
-	top: 10px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	width: 50%;
-}
-
 .option-row
 {
 	display: flex;
@@ -116,7 +102,7 @@ input[type="radio"] { margin-right: 10px; }
 {
 	font-size: 100%;
 	width: 300px;
-	background: #FEFEFE;
+	background: var(--white);
 	height:250px;
 }
 #popupTitle
@@ -129,38 +115,13 @@ input[type="radio"] { margin-right: 10px; }
 	font-size: 24px;
 	font-weight: normal;
 }
-#popupLogo
-{
-	position: relative;
-	top: 2px;
-	/*left: 12px;*/
-	width: 48px;
-}
-#logo
-{
-	position: absolute;
-	top: 6px;
-	left: 20px;
-}
-#sectionTitle
-{
-	font-weight: bold;
-	text-decoration: underline;
-	font-size: 21px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-}
 #checkmark
 {
 	position: absolute;
 	height: 21px;
-	color: green;
+	color: var(--primary);
 	top: 5px;
 	left: 300px;
-}
-#pause
-{
-	cursor: pointer;
 }
 .popupText
 {
@@ -168,24 +129,13 @@ input[type="radio"] { margin-right: 10px; }
 	right:0px;
 	width:100%;
 }
-#cog
-{
-	height: 20px;
-	position: relative;
-	top: 4px;
-	left: 5px;
-}
 #options-cont
 {
 	margin-top: 15px;
 	padding-bottom: 5px;
 	width:100%;
-	color: #AC8484;
+	color: var(--secondary);
 	text-align: center;
-}
-#options-cont:hover
-{
-	color: #AC8484;
 }
 #buttons-bar
 {
@@ -199,31 +149,24 @@ input[type="radio"] { margin-right: 10px; }
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color:Green;
 	right:0px;
 	width:100%;
 	height:30px;
-	color:var(--white);
 	letter-spacing: 1px;
 	font-size:18px;
 	padding:4px;
 	text-align: center;
 	font-weight:500;
-	box-shadow:0px 3px 6px #0000002e;
+	box-shadow:0px 3px 6px var(--tertiary);
 	fill: currentColor;
 }
 #popupRemainder {
 	top:70px;
 	right:5px;
 	text-align:center;
-	/*padding:5px;*/
 	letter-spacing:0.5px;
 	font-size:14px;
 	padding-top:15px;
-}
-.popupIcon {
-	width:24px;
-	color:white;
 }
 .popupHeaderText {
 	padding-left: 4px;
@@ -239,7 +182,7 @@ i {
 	cursor: pointer;
 }
 .textEmphasize {
-	color:#ff0000;
+	color:var(--primary);
 	font-weight: 500;
 }
 .popupRemainderText {
@@ -248,7 +191,7 @@ margin-right: 10%;
 }
 
 .button-limit {
-	color: #B80A0A;
+	color: var(--primary);
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15px;
@@ -260,10 +203,6 @@ margin-right: 10%;
 	cursor:pointer;
 }
 
-.button-limit:hover {
-	background-color: #F1F1F1;
-}
-
 .button-limit-text {
 	vertical-align: middle;
 }
@@ -273,8 +212,8 @@ margin-right: 10%;
 }
 
 .refresh-icon {
-	background-color: steelblue;
-	color: white;
+	background-color: var(--secondary);
+	color: var(--white);
 	font-size: 24px;
 	position: relative;
 	padding-bottom: 13px;
@@ -283,7 +222,7 @@ margin-right: 10%;
 	padding-right: 9px;
 	padding-top: 2px;
 	vertical-align: baseline;
-	box-shadow: 0px 1px 3px grey;
+	box-shadow: 0px 1px 3px var(--tertiary);
 	display: inline-block;
 	margin-bottom: -10px;
 }

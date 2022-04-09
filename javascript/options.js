@@ -24,7 +24,8 @@ function addSite()
 
 function addSiteField(index)
 {
-	document.getElementById("sites").insertAdjacentHTML('beforeend', '<div class="option-row" id="row' + index
+	document.getElementById("sites").insertAdjacentHTML('beforeend', 
+	'<div class="option-row" id="row' + index
 	+ '"><span>On&nbsp;</span><input class="siteURL" placeholder="example.com" id="siteURL' + index
 	+ '" type="text"></input><span>&nbsp;stop after&nbsp;</span><input class="pxNum" value='+config.pixels+'" id="pxNum' + index
 	+ '" type="number" min="0"></input>'

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dop-a-mine",
+  "options_page": "html/settings.html",
+  "description": "Skip the Gyaan",
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "js": ["javascript/inline.js"]
+    }
+  ],
+  "browser_action":
+  {
+    "default_icon": "images/icon19-grey.png",
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "scripts": ["javascript/background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+	"tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}

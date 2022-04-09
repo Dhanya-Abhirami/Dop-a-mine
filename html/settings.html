@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dop-a-mine - Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="../javascript/options.js"></script>
+	<script src="../javascript/minified/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+	<body>
+	<div id="main">
+		<div id="headerText"></div>
+		<h1>Dop-a-mine</h1>
+		<div class="row">
+			<div class="col">
+				<h2>Settings</h2>
+				<h3>Sites To Limit</h3>
+
+				<div id="sites">
+					<div class="option-row" id="row0">
+						<span>On&nbsp;</span>
+						<input class="siteURL" id="siteURL0" placeholder="example.com" type="text"></input>
+						<span>&nbsp;stop after&nbsp;</span>
+						<input class="pxNum" id="pxNum0" type="number" value ="5" min="0"></input>
+						<span>&nbsp;pixels&nbsp;</span>
+						<i class="material-icons" id="remove0">
+							close
+						</i>
+					</div>
+				</div>
+				<button class="secondary" id="add">Add Site</button>
+				<h3>Action</h3>
+				<p>
+					What should happen when you scroll too far?
+				</p>
+				<input type="radio" name="closeBehav" value="close" checked="checked">Close tab <br>
+				<input type="radio" name="closeBehav" value="remove">Make tab blank <br>
+				<input type="radio" name="closeBehav" value="alert">Warn me<br>
+				<input type="radio" name="closeBehav" value="redirect">Go to <input id="redirectURL" placeholder="example.com" type="text"></input><br>
+
+				<div id="buttons-bar">
+					<button id="save" class="primary">Save Settings</button>
+					<button id="reset" class="secondary">Clear Settings</button>
+					<span id="checkmark" style="display: none">Saved &#x2714</span>
+				</div>
+			</div>
+			<div class="col">
+				<img src = "../images/undraw_meditation_re_gll0.svg" alt="Meditation"/>
+			</div>
+		</div>
+	</div>
+	<a href="https://github.com/Dhanya-Abhirami/Dop-a-mine" title="See the source code at GitHub" style="position: fixed; top: 0; right: 0; border: 0; display: inline-block;"><img src="../images/github-ribbon.svg" width="70px" height="70px" alt=""></a>
+  </body>
+</html>
+

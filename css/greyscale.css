@@ -1,0 +1,3 @@
+img, video {
+    filter: grayscale(100%) !important;
+}

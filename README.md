@@ -5,6 +5,9 @@ Skip the Gyaan and get working towards your goals.
 ## Functionality
 Dop-a-mine prevents you from distraction of endless newsfeed. 
 
+## Demo
+* [Click here for Demo](https://www.youtube.com/watch?v=oEyTeELYt0Y)
+
 ## Usage
 ```
 Navigate to brave://extensions/ on your browser
